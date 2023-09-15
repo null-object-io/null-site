@@ -6,4 +6,8 @@ permalink: /education/
 
 Placeholder page for Teaching & Learning.
 
+Yep maybe Null School is not right for the name / nav... In which case we need to think of a better name  that means Teach & Learning / Pedagogy in one word 
+
+Content - Code Club, our lecturer profiles
+
 
