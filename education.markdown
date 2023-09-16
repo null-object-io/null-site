@@ -2,6 +2,7 @@
 layout: page
 title: Teaching & Learning
 permalink: /education/
+category: education
 ---
 
 Placeholder page for Teaching & Learning.

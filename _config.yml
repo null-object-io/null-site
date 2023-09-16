@@ -35,6 +35,7 @@ instagram: https://www.instagram.com/nullobject.io/
 github:  https://github.com/null-object-io/
 
 # Build settings
+permalink: /:title/
 theme: minima
 plugins:
   - jekyll-feed
