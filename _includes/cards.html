@@ -5,7 +5,7 @@
   {% if page.category == "research" %}
     {% for post in site.categories.research %}
      <div class="col-12 col-md-6 col-lg-4">
-         <a href="{{ site.baseurl }}/{{ post.url }}" class="index-anchor">
+         <a href="{{ post.url | relative_url}}" class="index-anchor">
           <div class="card rounded overflow-hidden">  
             <div class="image">
               {% if post.image %}
