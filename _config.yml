@@ -25,10 +25,10 @@ description: >- # this means to ignore newlines until "baseurl:"
   Null Object Ltd, is a platform for creative technology research, enterprise and pedagogy. Co-founded by Sarah Selby and Rod Dickinson. We work with a range of clients to provide Creative Technology solutions using techniques at the frontier of digital technology including: Machine Learning, Brain Computer Interfaces, DNA Data Storage.
 
 # uncomment for upload
-#baseurl: "null-site"
+baseurl: "null-site"
 
 # comment for upload
-baseurl: "" # the subpath of your site, e.g. /blog
+#baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 instagram: https://www.instagram.com/nullobject.io/
 #github_username:  null-object-io
