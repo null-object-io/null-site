@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Research Example"
-categories: [education, research]
+categories: [education, research, showcase]
 image: https://placehold.co/600x400?text=image
 ---
 

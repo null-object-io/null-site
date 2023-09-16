@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Walk This Way"
-categories: [services, research]
+categories: [services, research, showcase]
 image: https://placehold.co/600x400?text=image
 ---
 

@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Commercial Work EG 2"
-categories: services
+categories: [services, showcase]
 image: https://placehold.co/600x400?text=image
 ---
 
