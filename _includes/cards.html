@@ -1,13 +1,29 @@
 
-<h2 class="case-studies-header">Case Studies - {{ page.section }}</h2>
-<div class="row">
 
-  {% if page.section == "research" %}
+ <div class="col-12 col-md-6 col-lg-4">
+     <a href="{{ post.url | relative_url}}" class="index-anchor">
+      <div class="card rounded overflow-hidden">  
+        <div class="img-fluid">
+          {% if post.image %}
+          <img src="{{post.image | relative_url}}" alt="{{post.title}}">
+          {% endif %}
+          <div class="card-body">
+            <h2 class="panel-title">{{ post.title | truncate: 25 }}</h2>
+             <p>{{ post.excerpt | strip_html | strip_newlines | truncate: 150 }}</p>
+          </div>
+        </div>
+      </div>
+    </a>
+    </div>
+
+  <!-- {% if page.section == "research" %}
     {% for post in site.categories.research %}
+    <h2 class="case-studies-header">Case Studies - {{ page.section }}</h2>
+    <div class="row">
      <div class="col-12 col-md-6 col-lg-4">
          <a href="{{ post.url | relative_url}}" class="index-anchor">
           <div class="card rounded overflow-hidden">  
-            <div class="image">
+            <div class="img-fluid">
               {% if post.image %}
               <img src="{{post.image | relative_url}}" alt="{{post.title}}">
               {% endif %}
@@ -19,6 +35,7 @@
           </div>
         </a>
         </div>
+      </div>
     {% endfor %}
   
   {% elsif page.section == "education" %}
@@ -26,7 +43,7 @@
      <div class="col-12 col-md-6 col-lg-4">
          <a href="{{ post.url | relative_url}}" class="index-anchor">
           <div class="card rounded overflow-hidden">  
-            <div class="image">
+            <div class="img-fluid">
               {% if post.image %}
               <img src="{{post.image | relative_url}}" alt="{{post.title}}">
               {% endif %}
@@ -45,7 +62,7 @@
      <div class="col-12 col-md-6 col-lg-4">
          <a href="{{ post.url | relative_url}}" class="index-anchor">
           <div class="card rounded overflow-hidden">  
-            <div class="image">
+            <div class="img-fluid">
               {% if post.image %}
               <img src="{{post.image | relative_url}}" alt="{{post.title}}">
               {% endif %}
@@ -63,7 +80,7 @@
      <div class="col-12 col-md-6 col-lg-4">
          <a href="{{ post.url | relative_url}}" class="index-anchor">
           <div class="card rounded overflow-hidden">  
-            <div class="image">
+            <div class="img-fluid">
               {% if post.image %}
               <img src="{{post.image | relative_url}}" alt="{{post.title}}">
               {% endif %}
@@ -77,8 +94,8 @@
         </div>
     {% endfor %}
   {% endif %}
+ -->
 
-</div>
 
 
 <!-- <div class="py-4 py-md-5">

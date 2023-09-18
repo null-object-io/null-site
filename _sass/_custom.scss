@@ -1,0 +1,48 @@
+.max-width-800 {
+    max-width: 800px;
+    margin: auto;
+}
+
+@include media-query($on-palm) {
+    .max-width-800 {
+        max-width: 100%;
+    }
+}
+
+// page background
+.null-green {
+	background: #BFFF2E;
+}
+
+.null-violet {
+	background: #9C88BF;
+}
+
+.null-pink {
+	background: #FF227F; 
+}
+
+.null-blue {
+	background: #6FEDFF;
+}
+
+.null-blue {
+	background: #6FEDFF;
+}
+
+.null-orange {
+	background: #FF9200;
+}
+
+.null-yellow {
+	background: #FFFF00; //#282923
+}
+
+.null-slate {
+	background: #282923;
+}
+
+.null-grey {
+	background: #E1E1E1;
+}
+

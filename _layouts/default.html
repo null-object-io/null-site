@@ -2,11 +2,27 @@
 layout: compress
 ---
 
+{% if page.section == "about" %}
+  {% assign bg_color = "null-orange" %}
+{% elsif page.section == "services" %}
+  {% assign bg_color = "null-blue" %}
+{% elsif page.section == "contact" %}
+  {% assign bg_color = "null-pink" %}
+{% elsif page.section == "research" %}
+  {% assign bg_color = "null-green" %}
+{% elsif page.section == "showcase" %}
+  {% assign bg_color = "null-yellow" %}
+{% elsif page.section == "education" %}
+  {% assign bg_color = "null-violet" %}
+{% elsif page.section == "home" %}
+  {% assign bg_color = "null-orange" %}
+{% endif %}
+
 <!DOCTYPE html>
 <html>
   {% include head.html %}
 
-  <body>
+  <body class="{{ bg_color }}">
     {% include navigation.html %}
 
     <div class="container">

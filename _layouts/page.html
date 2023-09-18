@@ -2,7 +2,7 @@
 layout: default
 ---
 
-<div class="row">
+<div class="row max-width-800 ">
   <div class="col-md-12">
     <article class="post">
       <header class="post-header">
@@ -13,11 +13,41 @@ layout: default
     </article>
   </div>
 
-  <div>{% include cards.html %}</div>
+  {% if page.section == "research" %}
+    <h1 class="case-studies-header">Case Studies - {{ page.section }}</h1>
+    <div class="row">
+      {% for post in site.categories.research %}
+          {% include cards.html %}
+      {% endfor %}
+    </div>
 
-  
-  {% if page.section == "contact" %}
+  {% elsif page.section == "education" %}
+    <h1 class="case-studies-header">Case Studies - {{ page.section }}</h1>
+    <div class="row">
+      {% for post in site.categories.education %}
+          {% include cards.html %}
+      {% endfor %}
+    </div>
+
+  {% elsif page.section == "services" %}
+    <h1 class="case-studies-header">Case Studies - {{ page.section }}</h1>
+    <div class="row">
+      {% for post in site.categories.services %}
+          {% include cards.html %}
+      {% endfor %}
+    </div>
+
+  {% elsif page.section == "showcase" %}
+    <h1 class="case-studies-header">Case Studies - {{ page.section }}</h1>
+    <div class="row">
+      {% for post in site.categories.showcase %}
+          {% include cards.html %}
+      {% endfor %}
+    </div>
+
+  {% elsif page.section == "contact" %}
     {% include contact.html %}
   {% endif %}
+
 </div>
 

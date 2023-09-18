@@ -2,6 +2,7 @@
 layout: page
 title: What We Do
 permalink: /about/
+section: about
 ---
 
 Placeholder for the What We Do / About page.
