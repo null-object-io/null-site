@@ -1,7 +1,8 @@
 ---
-layout: page-contact
+layout: page
 title: Get In Touch
 permalink: /contact/
+section: contact
 ---
 
 Placeholder for Contact page 

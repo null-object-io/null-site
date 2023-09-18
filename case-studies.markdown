@@ -2,7 +2,7 @@
 layout: page
 title: Case Studies
 permalink: /case-studies/
-category: showcase
+section: showcase
 ---
 
 Placeholder page for Case Studies.

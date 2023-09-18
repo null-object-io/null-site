@@ -11,9 +11,13 @@ layout: default
 
       <div class="post-content">{{ content }}</div>
     </article>
-    <div>{% include cards.html %}</div>
   </div>
+
+  <div>{% include cards.html %}</div>
+
   
+  {% if page.section == "contact" %}
+    {% include contact.html %}
+  {% endif %}
 </div>
 
-<!-- {% include fb-script.html %} -->

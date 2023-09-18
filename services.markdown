@@ -2,7 +2,7 @@
 layout: page
 title: Our Services
 permalink: /services/
-category: services
+section: services
 ---
 
 Placeholder page for our services.

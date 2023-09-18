@@ -1,8 +1,8 @@
 
-<h2 class="case-studies-header">Case Studies - {{ page.category }}</h2>
+<h2 class="case-studies-header">Case Studies - {{ page.section }}</h2>
 <div class="row">
 
-  {% if page.category == "research" %}
+  {% if page.section == "research" %}
     {% for post in site.categories.research %}
      <div class="col-12 col-md-6 col-lg-4">
          <a href="{{ post.url | relative_url}}" class="index-anchor">
@@ -21,7 +21,7 @@
         </div>
     {% endfor %}
   
-  {% elsif page.category == "education" %}
+  {% elsif page.section == "education" %}
     {% for post in site.categories.education %}
      <div class="col-12 col-md-6 col-lg-4">
          <a href="{{ post.url | relative_url}}" class="index-anchor">
@@ -40,7 +40,7 @@
         </div>
     {% endfor %}
   
-  {% elsif page.category == "services" %}
+  {% elsif page.section == "services" %}
     {% for post in site.categories.services %}
      <div class="col-12 col-md-6 col-lg-4">
          <a href="{{ post.url | relative_url}}" class="index-anchor">
@@ -58,7 +58,7 @@
         </a>
         </div>
     {% endfor %}
-  {% elsif page.category == "showcase" %}
+  {% elsif page.section == "showcase" %}
     {% for post in site.categories.showcase %}
      <div class="col-12 col-md-6 col-lg-4">
          <a href="{{ post.url | relative_url}}" class="index-anchor">
