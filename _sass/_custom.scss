@@ -46,6 +46,18 @@
 	background: #E1E1E1;
 }
 
+// nav
+.navbar-dark .navbar-toggler {
+	background: #000000;
+	border-color: transparent;
+
+}
+
+.navbar-brand {
+	padding: 20px;
+	height: 100px;
+}
+
 .card {
 	border-radius: 0;
 }

@@ -2,6 +2,7 @@
 layout: compress
 ---
 
+<!-- set background color -->
 {% if page.section == "about" %}
   {% assign bg_color = "null-orange" %}
 {% elsif page.section == "services" %}
@@ -13,21 +14,21 @@ layout: compress
 {% elsif page.section == "showcase" %}
   {% assign bg_color = "null-yellow" %}
 {% elsif page.section == "education" %}
-  {% assign bg_color = "null-violet" %}
-{% elsif page.section == "home" %}
   {% assign bg_color = "null-orange" %}
+{% elsif page.section == "home" %}
+  {% assign bg_color = "null-violet" %}
 {% endif %}
 
 <!DOCTYPE html>
 <html>
   {% include head.html %}
 
-  <body class="{{ bg_color }}">
+  <body class="d-flex flex-column min-vh-100 {{ bg_color }}">
+   
     {% include navigation.html %}
-
-    <div class="container">
-      <div class="wrapper">{{ content }}</div>
-    </div>
+    
+    
+    {{ content }}
 
     {% include footer.html %}
 
