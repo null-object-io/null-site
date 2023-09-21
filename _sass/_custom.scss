@@ -58,11 +58,17 @@
 	height: 70px;
 }
 
-.nav-link {
+a.nav-link {
+	color: #ffffff !important;
 	text-transform: uppercase;
 	font-size: 14px;
 	font-family: 'GT-America-Mono';
 	word-spacing: -.2ch;
+}
+
+a.nav-link:hover{
+	color: #E1E1E1 !important;
+    //background-color:red !important;
 }
 
 .card {
