@@ -2,9 +2,9 @@
 layout: default
 ---
 <div class="container">
-  <div class="row max-width-800 ">
+  <div class="row max-width-1200 ">
     <div class="col-md-12">
-      <article class="post">
+      <article class="">
         <header class="post-header">
           <h1 class="post-title">{{ page.title }}</h1>
         </header>
@@ -17,7 +17,7 @@ layout: default
       <h1 class="case-studies-header">Case Studies - {{ page.section }}</h1>
       <div class="row">
         {% for post in site.categories.research %}
-            {% include cards.html %}
+            {% include cards-6.html %}
         {% endfor %}
       </div>
 
@@ -25,7 +25,7 @@ layout: default
       <h1 class="case-studies-header">Case Studies - {{ page.section }}</h1>
       <div class="row">
         {% for post in site.categories.education %}
-            {% include cards.html %}
+            {% include cards-6.html %}
         {% endfor %}
       </div>
 
@@ -33,15 +33,21 @@ layout: default
       <h1 class="case-studies-header">Case Studies - {{ page.section }}</h1>
       <div class="row">
         {% for post in site.categories.services %}
-            {% include cards.html %}
+            {% include cards-6.html %}
         {% endfor %}
       </div>
 
     {% elsif page.section == "showcase" %}
+      <div class="row max-width-1200">
+        <div class="col-md-12">
+          {% include carousel.html %}
+        </div>
+      </div>
+      
       <h1 class="case-studies-header">Case Studies - {{ page.section }}</h1>
-      <div class="row">
+      <div class="row max-width-1200">
         {% for post in site.categories.showcase %}
-            {% include cards.html %}
+            {% include cards-4.html %}
         {% endfor %}
       </div>
 

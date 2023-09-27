@@ -7,6 +7,7 @@ section: about
 
 Placeholder for the What We Do / About page.
 
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vestibulum morbi blandit cursus risus at ultrices mi tempus. Tincidunt praesent semper feugiat nibh sed pulvinar proin gravida hendrerit. 
 
-<!-- Webjeda cards is a Bootstrap based theme. Any Bootstrap element can be used in the theme. Read [Webjeda Blog](http://blog.webjeda.com){: target="\_blank"} for jekyll tutorials. -->
+Mauris rhoncus aenean vel elit scelerisque mauris pellentesque pulvinar pellentesque. Risus at ultrices mi tempus imperdiet nulla malesuada pellentesque elit. Id faucibus nisl tincidunt eget.
 
