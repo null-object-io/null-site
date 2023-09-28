@@ -1,0 +1,62 @@
+
+
+
+<!-- set background color -->
+{% if page.section == "about" %}
+  {% assign bg_color = "null-orange" %}
+{% elsif page.section == "services" %}
+  {% assign bg_color = "null-blue" %}
+{% elsif page.section == "contact" %}
+  {% assign bg_color = "null-grey" %}
+{% elsif page.section == "research" %}
+  {% assign bg_color = "null-green" %}
+{% elsif page.section == "showcase" %}
+  {% assign bg_color = "null-yellow" %}
+{% elsif page.section == "education" %}
+  {% assign bg_color = "null-orange" %}
+{% elsif page.section == "home" %}
+  {% assign bg_color = "null-violet" %}
+{% endif %}
+
+{% for post in site.categories.education %}
+  <div class="row bricks"> 
+  {% assign remainder = forloop.index | modulo:2 %}
+  
+  {% if remainder == 0 %}
+      <div class="col-12 col-md-5 bricks-image">
+        <div class="img-fluid {{ bg_color }}">
+              <!-- if external image -->
+              {% if post.image contains "https" %}
+                <img src={{ post.image }} alt="{{ post.title }}">
+              {% elsif post.image %}
+                {% assign filename = "/assets/images/" | append: post.image %}
+                <img src={{ filename | relative_url }} alt="{{ post.title }}">
+              {% endif %}
+        </div>
+    </div>
+    <div class="col-12 col-md-7 null-slate bricks-text">
+        {{ post.education-subtitle }}
+    </div>
+  {% else %}
+    <div class="col-12 col-md-4 null-slate bricks-text">
+        {{ post.education-subtitle }}
+    </div>
+    <div class="col-12 col-md-8 bricks-image">
+        <div class="img-fluid {{ bg_color }}">
+              <!-- if external image -->
+              {% if post.image contains "https" %}
+                <img src={{ post.image }} alt="{{ post.title }}">
+              {% elsif post.image %}
+                {% assign filename = "/assets/images/" | append: post.image %}
+                <img src={{ filename | relative_url }} alt="{{ post.title }}">
+              {% endif %}
+        </div>
+    </div>
+  {% endif %}
+
+
+
+    
+ </div>
+
+{% endfor %}

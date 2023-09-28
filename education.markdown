@@ -1,15 +1,16 @@
 ---
 layout: page
-title: Teaching & Learning
+title: Teaching and Workshops 
 permalink: /education/
 section: education
+banner: code-club-banner.jpg
 ---
 
 Placeholder page for Teaching & Learning.
 
-Yep maybe Null School is not right for the name / nav... In which case we need to think of a better name  that means Teach & Learning / Pedagogy in one word 
+Mauris rhoncus aenean vel elit scelerisque mauris pellentesque pulvinar pellentesque. Risus at ultrices mi tempus imperdiet nulla malesuada pellentesque elit. Id faucibus nisl tincidunt eget.
 
 Content - Code Club, our lecturer profiles
 
-![image](/assets/images/IMG-20220304-WA0000.jpg){: .img-fluid }
+<!-- ![image](/assets/images/IMG-20220304-WA0000.jpg){: .img-fluid } -->
 

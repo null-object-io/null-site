@@ -1,6 +1,10 @@
 ---
 layout: default
 ---
+{% if page.section == "education" or page.section == "research" %}
+  {% include banner.html %}
+{% endif %}
+
 <div class="container">
   <div class="row max-width-1200 ">
     <div class="col-md-12">
@@ -17,23 +21,19 @@ layout: default
       <h1 class="case-studies-header">Case Studies - {{ page.section }}</h1>
       <div class="row">
         {% for post in site.categories.research %}
-            {% include cards-6.html %}
+            {% include cards.html %}
         {% endfor %}
       </div>
 
     {% elsif page.section == "education" %}
-      <h1 class="case-studies-header">Case Studies - {{ page.section }}</h1>
-      <div class="row">
-        {% for post in site.categories.education %}
-            {% include cards-6.html %}
-        {% endfor %}
-      </div>
+          {% include bricks.html %}
+      
 
     {% elsif page.section == "services" %}
       <h1 class="case-studies-header">Case Studies - {{ page.section }}</h1>
       <div class="row">
         {% for post in site.categories.services %}
-            {% include cards-6.html %}
+            {% include cards.html %}
         {% endfor %}
       </div>
 
@@ -47,7 +47,7 @@ layout: default
       <h1 class="case-studies-header">Case Studies - {{ page.section }}</h1>
       <div class="row max-width-1200">
         {% for post in site.categories.showcase %}
-            {% include cards-4.html %}
+            {% include cards.html %}
         {% endfor %}
       </div>
 
