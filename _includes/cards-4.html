@@ -4,8 +4,12 @@
      <a href="{{ post.url | relative_url}}" class="index-anchor">
       <div class="card overflow-hidden">  
         <div class="img-fluid">
-          {% if post.image %}
-          <img src="{{post.image | relative_url}}" alt="{{post.title}}">
+          <!-- if external image -->
+          {% if post.image and post.image contains "https" %}
+            <img src={{ post.image }} alt="{{ post.title }}">
+          {% elif post.image %}
+            {% assign filename = "/assets/images/" | append: post.image %}
+            <img src={{ filename | relative_url }} alt="{{ post.title }}">
           {% endif %}
           <div class="card-body">
             <div class="mb-4">
@@ -17,6 +21,7 @@
                  {% endif %}
               {% endfor %}
             </div>
+            {{ filename }}
             <h2 class="panel-title">{{ post.title | truncate: 25 }}</h2>
              <p>{{ post.excerpt | strip_html | strip_newlines | truncate: 150 }}</p>
           </div>
