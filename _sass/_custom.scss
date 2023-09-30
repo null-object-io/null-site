@@ -63,9 +63,15 @@
 }
 
 .navbar-dark .navbar-toggler {
-	background: #000000;
-	border-color: transparent;
+	background: #282923;
+	border-color: #282923;
 
+}
+
+.navbar .navbar-toggler:focus {
+    text-decoration: none;
+    outline: 0;
+    box-shadow: none;
 }
 
 .navbar-brand {
@@ -103,6 +109,11 @@ a.nav-link:hover {
 	mix-blend-mode: multiply;
 }
 
+// page headings
+.post-title {
+	padding-top: 40px;
+}
+
 // bricks
 .bricks {
 	color: #ffffff;
@@ -118,8 +129,10 @@ a.nav-link:hover {
 	padding-right: 0 !important;
 }
 
-.bricks img {
+.bricks .bricks-image {
 	mix-blend-mode: multiply;
+	background-size: cover;
+	background-position: center;
 }
 
 // footer
@@ -132,6 +145,28 @@ footer .container-fluid, i .fa-sharp {
 footer .col-md-6 {
 	padding-right: 1.75rem !important;
 	padding-left: 1.75rem !important;
+}
+
+footer .links {
+	text-align: left;
+}
+
+footer .copyright {
+	text-align: right;
+}
+
+
+
+@include media-query($on-palm) {
+    footer .links {
+		text-align: center;
+		padding-bottom: 15px;
+	}
+
+	footer .copyright {
+		text-align: center;
+		padding-top: 15px;
+	}
 }
 
 footer a, footer {
@@ -285,8 +320,20 @@ footer {
 	background: transparent;
 	padding: 10px 30px 10px 30px;
 	border-radius: 0;
-	border: 1px solid #000000;
-	color: #000000;
+	border: 1px solid #282923;
+	color: #282923;
+	font-size: 12px;
+	font-family: 'GT-America-Mono';
+	word-spacing: -.2ch;
+	text-transform: uppercase;
+}
+
+.btn-custom:hover {
+	background: #282923;
+	padding: 10px 30px 10px 30px;
+	border-radius: 0;
+	border: 1px solid #282923;
+	color: #ffffff;
 	font-size: 12px;
 	font-family: 'GT-America-Mono';
 	word-spacing: -.2ch;

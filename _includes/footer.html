@@ -1,9 +1,9 @@
 <footer class="mt-auto null-slate">
   <div class="container-fluid">
 
-    <div class="row text-left p20">
+    <div class="row p20">
       
-      <div class="col-md-4">
+      <div class="col-md-4 links">
         {% if site.github %}
         <a target="_blank" href="{{site.github}}"
           >Github</a>
@@ -22,13 +22,13 @@
         {% endif %}
       </div>
 
-      <div class="col-md-4 text-center">
+      <div class="col-md-4 logo text-center">
         <a class="" href={{"/" | relative_url}}>
           <img src= {{"/assets/images/ui/null-object-null-symbols-3-white-rgb.png" | relative_url}} alt="Null Object logo" width="25">
         </a>
       </div>
 
-      <div class="col-md-4 text-end">
+      <div class="col-md-4 copyright">
         {% if site.copyright %}
           {{site.copyright}}
         {% endif %}

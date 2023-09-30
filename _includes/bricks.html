@@ -23,35 +23,30 @@
   {% assign remainder = forloop.index | modulo:2 %}
   
   {% if remainder == 0 %}
-      <div class="col-12 col-md-5 bricks-image">
-        <div class="img-fluid {{ bg_color }}">
-              <!-- if external image -->
-              {% if post.image contains "https" %}
-                <img src={{ post.image }} alt="{{ post.title }}">
-              {% elsif post.image %}
-                {% assign filename = "/assets/images/" | append: post.image %}
-                <img src={{ filename | relative_url }} alt="{{ post.title }}">
-              {% endif %}
-        </div>
-    </div>
-    <div class="col-12 col-md-7 null-slate bricks-text">
-        {{ post.education-subtitle }}
-    </div>
+    <!-- if external image -->
+    {% if post.image contains "https" %}
+      <div class="col-sml-12 col bricks-image" style="background-image: url( {{ post.image }} );">
+    {% elsif post.image %}
+      {% assign filename = "/assets/images/" | append: post.image %}
+      <div class="col bricks-image" style="background-image: url( {{ filename | relative_url }} );">
+    {% endif %}
+        
+      </div>
+      <div class="col-sml-12 col-lg-8 null-slate bricks-text">
+          {{ post.education-subtitle }}
+      </div>
   {% else %}
-    <div class="col-12 col-md-4 null-slate bricks-text">
-        {{ post.education-subtitle }}
-    </div>
-    <div class="col-12 col-md-8 bricks-image">
-        <div class="img-fluid {{ bg_color }}">
-              <!-- if external image -->
-              {% if post.image contains "https" %}
-                <img src={{ post.image }} alt="{{ post.title }}">
-              {% elsif post.image %}
-                {% assign filename = "/assets/images/" | append: post.image %}
-                <img src={{ filename | relative_url }} alt="{{ post.title }}">
-              {% endif %}
-        </div>
-    </div>
+      <div class="col-sml-12 col-lg-5 null-slate bricks-text">
+          {{ post.education-subtitle }}
+      </div>
+      <!-- if external image -->
+    {% if post.image contains "https" %}
+      <div class="col-sml-12 col bricks-image" style="background-image: url( {{ post.image }} );">
+    {% elsif post.image %}
+      {% assign filename = "/assets/images/" | append: post.image %}
+      <div class="col bricks-image" style="background-image: url( {{ filename | relative_url }} );">
+    {% endif %}
+      </div>
   {% endif %}
 
 

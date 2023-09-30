@@ -3,7 +3,7 @@ layout: page
 title: Teaching and Workshops 
 permalink: /education/
 section: education
-banner: code-club-banner.jpg
+banner: code-club-banner-bw.jpg
 ---
 
 Placeholder page for Teaching & Learning.
