@@ -2,7 +2,7 @@
 layout: post
 title:  "Workshops"
 categories: [education, showcase]
-image: https://placehold.co/600x400?text=image
+image: code-club-345.png
 ---
 
 > Lorem ipsum dolor sit amet, *consectetur* adipiscing *elit*. Ut non iaculis risus.

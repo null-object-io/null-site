@@ -129,22 +129,37 @@ a.nav-link:hover {
 	/* display: inline; */
 	color: #ffffff;
 	font-size: 40px;
-	padding: 40px;
+	padding: 40px 40px 15px 40px;
 	line-height: 3rem;
+	margin: 0;
 }
 
-.bricks .bricks-text p {
-	// display: none;
+.bricks .bricks-text p:not(.bricks .bricks-text blockquote p) {
+	height: 0px;
+	margin-bottom: 0;
 }
 
+/*display different coloured words*/
 .bricks .bricks-text blockquote em {
-	/* display: inline; */
-	color: #BFFF2E;
+	color: #FFFF00;
 	text-transform: uppercase;
 	font-style: normal;
 	font-family: 'GT-America-Mono';
 	word-spacing: -.2ch;
 }
+
+.bricks .bricks-text blockquote em:first-of-type {
+	color: #BFFF2E;
+}
+
+.bricks .bricks-text blockquote em:last-of-type {
+	color: #FF227F;
+}
+
+.bricks .bricks-text .post-link {
+	padding: 0px 40px 40px 40px;
+}
+
 
 .bricks .bricks-image {
 	padding-left: 0 !important;
@@ -356,6 +371,18 @@ footer {
 	padding: 10px 30px 10px 30px;
 	border-radius: 0;
 	border: 1px solid #282923;
+	color: #ffffff;
+	font-size: 12px;
+	font-family: 'GT-America-Mono';
+	word-spacing: -.2ch;
+	text-transform: uppercase;
+}
+
+.bricks .btn-custom:hover {
+	background: #282923;
+	padding: 10px 30px 10px 30px;
+	border-radius: 0;
+	border: 1px solid #ffffff;
 	color: #ffffff;
 	font-size: 12px;
 	font-family: 'GT-America-Mono';
