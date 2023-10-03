@@ -5,6 +5,6 @@ permalink: /contact/
 section: contact
 ---
 
-Placeholder for Contact page 
+Work with us. Collaborate with us. Get in touch.
 
-The conact form goes to null.object.contact@gmail and uses https://forms.un-static.com
+<!-- The contact form goes to null.object.contact@gmail and uses https://forms.un-static.com -->

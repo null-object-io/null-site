@@ -3,8 +3,9 @@ layout: post
 title:  "Lecturing"
 categories: education
 image: https://placehold.co/600x400?text=image
-education-subtitle: id accumsan justo <span class="text-yellow">tincidunt<span>, <span class="text-green">Donec<span> <span class="text-pink">accumsan<span> purus mauris, vitae luctus magna faucibus vitae.
 ---
+
+> Donec accumsan *purus* mauris, *vitae* luctus magna faucibus vitae.  
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut non iaculis risus. Phasellus vitae nunc ac lectus finibus porttitor. Sed vel enim vulputate, euismod neque maximus, tincidunt turpis. Aenean accumsan leo eget dui porta pulvinar. Sed tincidunt, nisi non efficitur tempus, enim lectus aliquam arcu, at dignissim ligula ex eu quam. Suspendisse gravida dapibus ultrices. Vivamus convallis nulla nisl, a imperdiet felis pellentesque in. Nulla facilisi. Integer aliquet sed orci eu tempor. Sed viverra ullamcorper commodo.
 
