@@ -25,10 +25,10 @@
   {% if remainder == 0 %}
     <!-- if external image -->
     {% if post.image contains "https" %}
-      <div class="col-sml-12 col bricks-image" style="background-image: url( {{ post.image }} );">
+      <div class="col-sml-12 col-lg-4 bricks-image" style="background-image: url( {{ post.image }} );">
     {% elsif post.image %}
       {% assign filename = "/assets/images/" | append: post.image %}
-      <div class="col bricks-image" style="background-image: url( {{ filename | relative_url }} );">
+      <div class="col-sml-12 col-lg-4 bricks-image" style="background-image: url( {{ filename | relative_url }} );">
     {% endif %}
       </div>
       <div class="col-sml-12 col-lg-8 null-slate bricks-text">
@@ -42,10 +42,10 @@
       </div>
       <!-- if external image -->
     {% if post.image contains "https" %}
-      <div class="col-sml-12 col bricks-image" style="background-image: url( {{ post.image }} );">
+      <div class="col-sml-12 col-lg-7 bricks-image" style="background-image: url( {{ post.image }} );">
     {% elsif post.image %}
       {% assign filename = "/assets/images/" | append: post.image %}
-      <div class="col bricks-image" style="background-image: url( {{ filename | relative_url }} );">
+      <div class="col-sml-12 col-lg-7 bricks-image" style="background-image: url( {{ filename | relative_url }} );">
     {% endif %}
       </div>
   {% endif %}

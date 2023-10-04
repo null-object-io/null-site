@@ -16,45 +16,52 @@ layout: default
         <div class="post-content">{{ content }}</div>
       </article>
     </div>
+  </div>
 
-    {% if page.section == "research" %}
+{% if page.section == "research" %}
+  <div class="row max-width-1200">
+    <h1 class="case-studies-header">Case Studies - {{ page.section }}</h1>
+      {% for post in site.categories.research %}
+          {% include cards.html %}
+      {% endfor %}
+  </div>
+
+{% elsif page.section == "education" %}
+  <!-- <div class="col-md-12"> -->
+      {% include bricks.html %}
+  <!-- </div> -->
+  
+
+{% elsif page.section == "services" %}
+  <div class="row max-width-1200">
       <h1 class="case-studies-header">Case Studies - {{ page.section }}</h1>
-      <div class="row">
-        {% for post in site.categories.research %}
-            {% include cards.html %}
-        {% endfor %}
-      </div>
-
-    {% elsif page.section == "education" %}
-          {% include bricks.html %}
-      
-
-    {% elsif page.section == "services" %}
-      <h1 class="case-studies-header">Case Studies - {{ page.section }}</h1>
-      <div class="row">
+      <!-- <div class="row"> -->
         {% for post in site.categories.services %}
             {% include cards.html %}
         {% endfor %}
-      </div>
-
-    {% elsif page.section == "showcase" %}
-      <div class="row max-width-1200">
-        <div class="col-md-12">
-          {% include carousel.html %}
-        </div>
-      </div>
-      
-      <h1 class="case-studies-header">Case Studies - {{ page.section }}</h1>
-      <div class="row max-width-1200">
-        {% for post in site.categories.showcase %}
-            {% include cards.html %}
-        {% endfor %}
-      </div>
-
-    {% elsif page.section == "contact" %}
-      {% include contact.html %}
-    {% endif %}
-
   </div>
+
+{% elsif page.section == "showcase" %}
+  <div class="row max-width-1200">
+    <div class="col-md-12">
+      {% include carousel.html %}
+    </div>
+  </div>
+  <div class="row max-width-1200">
+  <h1 class="case-studies-header">Case Studies - {{ page.section }}</h1>
+    {% for post in site.categories.showcase %}
+        {% include cards.html %}
+    {% endfor %}
+  </div>
+
+{% elsif page.section == "contact" %}
+  <div class="row max-width-1200">
+    <div class="col-md-12">
+      {% include contact.html %}
+    </div>
+  </div>
+{% endif %}
+
+  
 </div>
 
