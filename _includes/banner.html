@@ -17,15 +17,19 @@
 {% endif %}
 
 <div class="container-fluid banner">
-    <div class="{{ bg_color }}">
+  <div class="row">
+    <div class="col {{ bg_color }}"><img src={{ "/assets/images/ui/black-pixel.png" | relative_url }} class="pixel-filler"></div>
+    <div class="{{ bg_color }} text-center col-md-auto">
       <!-- if external image -->
       {% if page.banner contains "https" %}
         <img src={{ post.image }} class="img-fluid" alt="{{ page.title }}">
       {% elsif page.banner %}
         {% assign filename = "/assets/images/" | append: page.banner %}
-        <img src={{ filename | relative_url }} alt="Null Object Research">
+        <img src={{ filename | relative_url }} alt="Null Object Research" >
       {% endif %}
     </div>
+    <div class="col {{ bg_color }}"><img src={{ "/assets/images/ui/black-pixel.png" | relative_url }} class="pixel-filler"></div>
+  </div>
 </div>
 
  

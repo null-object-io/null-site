@@ -5,9 +5,16 @@ layout: default
   {% include banner.html %}
 {% endif %}
 
-<div class="container">
-  <div class="row max-width-1200 ">
-    <div class="col-md-12">
+{% if page.section == "contact" %}
+  {% assign col_width = "col-md-4" %}
+{% else %}
+  {% assign col_width = "col-md-12" %}
+{% endif %}
+  
+
+<div class="container ">
+  <div class="row max-width-1200">
+    <div class="{{ col_width }}">
       <article class="">
         <header class="post-header">
           <h1 class="post-title">{{ page.title }}</h1>
@@ -16,6 +23,13 @@ layout: default
         <div class="post-content">{{ content }}</div>
       </article>
     </div>
+
+    {% if page.section == "contact" %}
+        <!-- Add contact form -->
+        <div class="col-md-6 post-title">
+          {% include contact.html %}
+        </div>
+    {% endif %}
   </div>
 
 {% if page.section == "research" %}
@@ -36,9 +50,9 @@ layout: default
   <div class="row max-width-1200">
       <h1 class="case-studies-header">Case Studies - {{ page.section }}</h1>
       <!-- <div class="row"> -->
-        {% for post in site.categories.services %}
-            {% include cards.html %}
-        {% endfor %}
+      {% for post in site.categories.services %}
+          {% include cards.html %}
+      {% endfor %}
   </div>
 
 {% elsif page.section == "showcase" %}
@@ -52,13 +66,6 @@ layout: default
     {% for post in site.categories.showcase %}
         {% include cards.html %}
     {% endfor %}
-  </div>
-
-{% elsif page.section == "contact" %}
-  <div class="row max-width-1200">
-    <div class="col-md-12">
-      {% include contact.html %}
-    </div>
   </div>
 {% endif %}
 

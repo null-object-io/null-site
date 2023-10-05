@@ -31,15 +31,17 @@
  <div class="col-12 col-md-6 {{ columns }}">
       <div class="card overflow-hidden">  
         <div>
-          <div class="img-fluid {{ card-images }} {{ bg_color }}">
-            <!-- if external image -->
+
+          <!-- if external image -->
             {% if post.image contains "https" %}
-              <img src={{ post.image }} alt="{{ post.title }}">
+              <div class="{{ card-images }} {{ bg_color }} " style="background-image: url( {{ post.image }} );"></div>
+            <!-- <img src={{ post.image }} alt="{{ post.title }}"> -->
             {% elsif post.image %}
               {% assign filename = "/assets/images/" | append: post.image %}
-              <img src={{ filename | relative_url }} alt="{{ post.title }}">
+              <div class="{{ card-images }} {{ bg_color }} " style="background-image: url( {{ filename | relative_url }} );"></div>
+              <!-- <img src={{ filename | relative_url }} alt="{{ post.title }}"> -->
             {% endif %}
-          </div>
+
           <div class="card-body">
             <div class="mb-4">
               <!-- calculate how many categories will be used -->
@@ -50,19 +52,16 @@
 
               <!-- print the list of categories  -->
               {% for item in post.categories %}
-                {% if item != "showcase" %}
+                {% if item == "services" or item == "research" or item == "education" %}
                   <span class="category">{{ item }} </span>
-                  <!-- add black dot except for last -->
-                  {% if forloop.index != category-size %}
-                        <span class="black-dot"></span>
-                  {% endif %}
+                    <span class="black-dot"></span>
                 {% endif %}
               {% endfor %}
 
             </div>
             <h2 class="panel-title">{{ post.title | truncate: 25 }}</h2>
              <p>{{ post.excerpt | strip_html | strip_newlines | truncate: 150 }}</p>
-             <a href="{{ post.url | relative_url}}" type="button" class="btn btn-custom">More...</a>
+             <a href="{{ post.url | relative_url}}" type="button" class="btn btn-custom">Discover More</a>
           </div>
         </div>
       </div>

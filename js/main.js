@@ -1,14 +1,16 @@
 console.log("hi from JS");
 
-// load home page bg random color
+// load home page bg random colors
 let body = document.querySelector(".random-color");
-let colors = ["null-green", "null-violet", "null-pink", "null-blue", "null-orange", "null-yellow"];
+let colors = ["null-violet", "null-pink", "null-blue", "null-orange", "null-yellow"];
 if (body != null) {
 	//pick random color
-	const randomElement = colors[Math.floor(Math.random() * colors.length)];
+	let randomIndex = Math.floor(Math.random() * colors.length);
+	let randomElement = colors[randomIndex];
 	console.log("home page", randomElement);
 	body.classList.add(randomElement);
 }
+
 
 // hide show nav bar
 el_autohide = document.querySelector('.autohide');

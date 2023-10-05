@@ -19,26 +19,35 @@
 {% endif %}
 
 {% for post in site.categories.education %}
-  <div class="row bricks"> 
+  <div class="row bricks max-width-1200 {% cycle 'null-orange', 'null-blue' %}"> 
   {% assign remainder = forloop.index | modulo:2 %}
   
   {% if remainder == 0 %}
+
     <!-- if external image -->
     {% if post.image contains "https" %}
-      <div class="col-sml-12 col-lg-4 bricks-image" style="background-image: url( {{ post.image }} );">
+      <div class="col-sml-12 col-lg-8 bricks-image" style="background-image: url( {{ post.image }} );">
     {% elsif post.image %}
       {% assign filename = "/assets/images/" | append: post.image %}
-      <div class="col-sml-12 col-lg-4 bricks-image" style="background-image: url( {{ filename | relative_url }} );">
+      <div class="col-sml-12 col-lg-8 bricks-image" style="background-image: url( {{ filename | relative_url }} );">
     {% endif %}
       </div>
-      <div class="col-sml-12 col-lg-8 null-slate bricks-text">
-          {{ post.content }}
-          <div class="post-link"><a href="{{ post.url | relative_url}}" type="button" class="btn btn-custom">More...</a></div>
+      <div class="col-sml-12 col-lg-4 bricks-text">
+        <header class="post-header">
+          <h1 class="post-title">{{ post.title }}</h1>
+        </header>
+        <div class="post-content">{{ post.content }}</div>
+        <div class="post-link"><a href="{{ post.url | relative_url}}" type="button" class="btn btn-custom">Discover More</a></div>
       </div>
+
   {% else %}
-      <div class="col-sml-12 col-lg-5 null-slate bricks-text">
-          {{ post.content }}
-          <div class="post-link"><a href="{{ post.url | relative_url}}" type="button" class="btn btn-custom">More...</a></div>
+      
+      <div class="col-sml-12 col-lg-5 bricks-text">
+          <header class="post-header">
+            <h1 class="post-title">{{ post.title }}</h1>
+          </header>
+          <div class="post-content">{{ post.content }}</div>
+          <div class="post-link"><a href="{{ post.url | relative_url}}" type="button" class="btn btn-custom">Discover More</a></div>
       </div>
       <!-- if external image -->
     {% if post.image contains "https" %}
@@ -48,6 +57,7 @@
       <div class="col-sml-12 col-lg-7 bricks-image" style="background-image: url( {{ filename | relative_url }} );">
     {% endif %}
       </div>
+
   {% endif %}
 
 
