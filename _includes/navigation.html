@@ -1,17 +1,9 @@
-{% if page.section != "home" %}
-  {% assign nav_expand = "navbar-expand-lg" %}
-  {% assign bg_dark = "bg-dark" %}
-{% endif %}
 
-
-<nav class="navbar {{ nav_expand }} navbar-dark {{ bg_dark }}">
+<nav class="navbar autohide navbar-expand-lg navbar-dark null-slate">
   <div class="container-fluid">
 
     <a class="navbar-brand" href={{"/" | relative_url}}>
-      {% if page.section != "home" %}
-        <img src= {{"/assets/images/ui/null-object-logo-stacked-white-rgb-100px.svg" | relative_url}} alt="Null Object logo" width="100">
-      {% endif %}
-
+      <img src= {{"/assets/images/ui/null-object-logo-stacked-white-rgb-100px.svg" | relative_url}} alt="Null Object logo" width="100">
     </a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>

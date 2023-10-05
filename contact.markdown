@@ -3,6 +3,7 @@ layout: page
 title: Get In Touch
 permalink: /contact/
 section: contact
+banner: walk-this-way-banner.jpg
 ---
 
 Work with us. Collaborate with us. Get in touch.

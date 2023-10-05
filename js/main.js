@@ -1,5 +1,33 @@
 console.log("hi from JS");
 
+// load home page bg random color
+let body = document.querySelector(".random-color");
+let colors = ["null-green", "null-violet", "null-pink", "null-blue", "null-orange", "null-yellow"];
+if (body != null) {
+	//pick random color
+	const randomElement = colors[Math.floor(Math.random() * colors.length)];
+	console.log("home page", randomElement);
+	body.classList.add(randomElement);
+}
+
+// hide show nav bar
+el_autohide = document.querySelector('.autohide');
+
+if (el_autohide != null){
+	var last_scroll_top = 0;
+	window.addEventListener('scroll', function() {
+	      let scroll_top = window.scrollY;
+	     if(scroll_top < last_scroll_top) {
+	          el_autohide.classList.remove('scrolled-down');
+	          el_autohide.classList.add('scrolled-up');
+	      }
+	      else {
+	          el_autohide.classList.remove('scrolled-up');
+	          el_autohide.classList.add('scrolled-down');
+	      }
+	      last_scroll_top = scroll_top;
+	}); 
+}
 
 // contact form validation
 let contactForm = document.querySelector("#contact-form");
