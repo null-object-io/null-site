@@ -9,4 +9,4 @@ Research Example with Radley. Lorem ipsum dolor sit amet, consectetur adipiscing
 
 Morbi vestibulum sem eget maximus feugiat. Curabitur vehicula magna in molestie dignissim. Nam gravida leo non purus cursus, id accumsan justo tincidunt. Donec accumsan purus mauris, vitae luctus magna faucibus vitae. Nullam tincidunt urna scelerisque, hendrerit mi ac, sagittis ligula. Curabitur convallis eros eu fringilla maximus. Donec lobortis scelerisque enim eu molestie. Duis ac mi quis risus auctor vulputate.
 
-![image](/assets/images/IMG-20220304-WA0000.jpg){: .img-fluid }
+![image](/assets/images/placeholder1.jpg){: .img-fluid }

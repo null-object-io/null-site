@@ -8,8 +8,8 @@ section: showcase
 carousel: 
 - image: placeholder1.jpg
   caption: Green stuff
-- image: placeholder2.jpg
-  caption: Rocks
+- image: walk-this-way.jpg
+  caption: walk this  way
 - image: placeholder3.jpg
   caption: castle
 - image: placeholder4.jpg

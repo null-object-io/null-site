@@ -23,17 +23,17 @@ layout: default
     <div class="col-md-12">
       <div class="next-previous-articles">
         <nav aria-label="">
-          <ul class="pagination">
+          <ul class="pagination justify-content-between">
             {% if page.next.url %}
             <li class="page-item">
-              <a class="page-link" href="{{page.next.url | relative_url}}" tabindex="-1"
-                >&laquo; {{page.next.title}}</a
+              <a type="button" class="btn btn-custom" href="{{page.next.url | relative_url}}" tabindex="-1"
+                ><img src="/assets/images/ui/arrow-left.svg" class="arrow" style="vertical-align: baseline;" alt="Left arrow"> {{page.next.title}}</a
               >
             </li>
             {% endif %} {% if page.previous.url %}
             <li class="page-item">
-              <a class="page-link" href="{{page.previous.url | relative_url}}"
-                >{{page.previous.title}} &raquo;</a
+              <a type="button" class="btn btn-custom" href="{{page.previous.url | relative_url}}"
+                >{{page.previous.title}} <img src="/assets/images/ui/arrow-right.svg" class="arrow" style="vertical-align: baseline;" alt="right arrow"></a
               >
             </li>
             {% endif %}
@@ -41,9 +41,6 @@ layout: default
         </nav>
       </div>
 
-      <div class="">
-        {% if site.disqus-shortname %} {% include disqus.html %} {% endif %}
-      </div>
     </div>
   </div>
 
