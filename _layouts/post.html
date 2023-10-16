@@ -7,7 +7,7 @@ layout: default
   <div class="row">
     <div class="col-md-12 mt-3 ms-3">
               <a type="button" class="btn btn-custom" href="{{page.next.url | relative_url}}" tabindex="-1"
-                ><img src="/assets/images/ui/arrow-left.svg" class="arrow" style="vertical-align: baseline;" alt="Left arrow"> Back</a
+                ><img src={{"/assets/images/ui/arrow-left.svg" | relative_url}} class="arrow" style="vertical-align: baseline;" alt="Left arrow"> Back</a
               >
 
     </div>
@@ -38,13 +38,13 @@ layout: default
             {% if page.next.url %}
             <li class="page-item">
               <a type="button" class="btn btn-custom" href="{{page.next.url | relative_url}}" tabindex="-1"
-                ><img src="/assets/images/ui/arrow-left.svg" class="arrow" style="vertical-align: baseline;" alt="Left arrow"> {{page.next.title}}</a
+                ><img src={{"/assets/images/ui/arrow-left.svg" | relative_url}} class="arrow" style="vertical-align: baseline;" alt="Left arrow"> {{page.next.title}}</a
               >
             </li>
             {% endif %} {% if page.previous.url %}
             <li class="page-item">
               <a type="button" class="btn btn-custom" href="{{page.previous.url | relative_url}}"
-                >{{page.previous.title}} <img src="/assets/images/ui/arrow-right.svg" class="arrow" style="vertical-align: baseline;" alt="right arrow"></a
+                >{{page.previous.title}} <img src={{"/assets/images/ui/arrow-right.svg" | relative_url}} class="arrow" style="vertical-align: baseline;" alt="right arrow"></a
               >
             </li>
             {% endif %}

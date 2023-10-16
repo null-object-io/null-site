@@ -1,0 +1,12 @@
+{% assign filename1 = "/assets/images/" | append: include.file_1 %}
+{% assign filename2 = "/assets/images/" | append: include.file_2 %}
+
+<figure>
+   <img src="{{filename1 | relative_url}}" class="img-fluid" alt="{{ include.alt }}"/>
+   <figcaption>{{ include.caption_1 }}</figcaption>
+{% if include.file_2 != null %}
+    <img src="{{filename2 | relative_url}}" class="img-fluid" alt="{{ include.alt }}"/>
+   <figcaption>{{ include.caption_2 }}</figcaption>
+{% endif %}
+
+</figure>
