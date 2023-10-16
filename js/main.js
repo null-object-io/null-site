@@ -32,15 +32,22 @@ if (el_autohide != null){
 }
 
 // format images in posts
-/*let imageBlock = document.querySelectorAll(".post-content table");
-for (var i = 0; i < imageBlock.length; i++) {
-	imageBlock[i].parentNode.classList.add("image-block");
-}*/
+let imageTable = document.querySelectorAll(".post-content table");
+for (var i = 0; i < imageTable.length; i++) {
+	const tablePos = imageTable[i].getBoundingClientRect();
+	console.log(tablePos.left); 
+	imageTable[i].style.left = "0";
+}
+
+let viewPortWidth = Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0);
+console.log(viewPortWidth);
+
 
 let images = document.querySelectorAll(".post-content table img");
 for (var i = 0; i < images.length; i++) {
-	images[i].classList.add("img-fluid");
+	/*images[i].classList.add("img-fluid");*/
 }
+
 /*imageBlock.parentNode.classList.add("image-block");
 imageBlock.classList.add("test");*/
 

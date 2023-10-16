@@ -269,14 +269,13 @@ a.nav-link:hover {
 // post page
 .post-content table {
 	border: 3px solid red;
-	width: 900px;
+	width: 100vw;
 	position: relative;
-	left: -200px;
 }
 
 .post-content table img {
-	/* width: 500px;
-	height: auto; */
+	width: auto;
+	height: 400px; 
 }
 
 // footer
