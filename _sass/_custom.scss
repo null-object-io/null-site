@@ -266,6 +266,19 @@ a.nav-link:hover {
 	}
 }
 
+// post page
+.post-content table {
+	border: 3px solid red;
+	width: 900px;
+	position: relative;
+	left: -200px;
+}
+
+.post-content table img {
+	/* width: 500px;
+	height: auto; */
+}
+
 // footer
 footer .container-fluid, i .fa-sharp {
 	color: #ffffff;

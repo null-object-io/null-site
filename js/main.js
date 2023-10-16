@@ -31,6 +31,20 @@ if (el_autohide != null){
 	}); 
 }
 
+// format images in posts
+/*let imageBlock = document.querySelectorAll(".post-content table");
+for (var i = 0; i < imageBlock.length; i++) {
+	imageBlock[i].parentNode.classList.add("image-block");
+}*/
+
+let images = document.querySelectorAll(".post-content table img");
+for (var i = 0; i < images.length; i++) {
+	images[i].classList.add("img-fluid");
+}
+/*imageBlock.parentNode.classList.add("image-block");
+imageBlock.classList.add("test");*/
+
+
 // contact form validation
 let contactForm = document.querySelector("#contact-form");
 
