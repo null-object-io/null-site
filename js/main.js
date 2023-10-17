@@ -18,35 +18,41 @@ el_autohide = document.querySelector('.autohide');
 if (el_autohide != null){
 	var last_scroll_top = 0;
 	window.addEventListener('scroll', function() {
-	      let scroll_top = window.scrollY;
-	     if(scroll_top < last_scroll_top) {
-	          el_autohide.classList.remove('scrolled-down');
-	          el_autohide.classList.add('scrolled-up');
-	      }
-	      else {
-	          el_autohide.classList.remove('scrolled-up');
-	          el_autohide.classList.add('scrolled-down');
-	      }
-	      last_scroll_top = scroll_top;
+	    let scroll_top = window.scrollY;
+	    if(scroll_top < last_scroll_top) {
+	      el_autohide.classList.remove('scrolled-down');
+	      el_autohide.classList.add('scrolled-up');
+	    }
+	    else {
+	      el_autohide.classList.remove('scrolled-up');
+	      el_autohide.classList.add('scrolled-down');
+	    }
+	    last_scroll_top = scroll_top;
 	}); 
 }
 
+
 // format images in posts
-let imageTable = document.querySelectorAll(".post-content table");
-for (var i = 0; i < imageTable.length; i++) {
-	const tablePos = imageTable[i].getBoundingClientRect();
-	console.log(tablePos.left); 
-	imageTable[i].style.left = "0";
+let imageBlock = document.querySelectorAll(".post-content .two-images");
+for (var i = 0; i < imageBlock.length; i++) {
+	const fig = imageBlock[i].getBoundingClientRect();
+	let viewPortWidth = Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0);
+	console.log(viewPortWidth);
+	let extraWidth = 400;
+	if (viewPortWidth > 767) {
+		imageBlock[i].style.width = fig.width+extraWidth+"px";
+		let left = -Math.abs(extraWidth/2);
+		imageBlock[i].style.left = left+"px";
+	}
 }
 
-let viewPortWidth = Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0);
-console.log(viewPortWidth);
 
 
-let images = document.querySelectorAll(".post-content table img");
+
+/*let images = document.querySelectorAll(".post-content table img");
 for (var i = 0; i < images.length; i++) {
-	/*images[i].classList.add("img-fluid");*/
-}
+	images[i].classList.add("img-fluid");
+}*/
 
 /*imageBlock.parentNode.classList.add("image-block");
 imageBlock.classList.add("test");*/

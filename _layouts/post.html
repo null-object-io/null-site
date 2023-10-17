@@ -4,9 +4,9 @@ layout: default
 
 <div class="container ">
 
-  <div class="row">
-    <div class="col-md-12 mt-3 ms-3">
-              <a type="button" class="btn btn-custom" href="{{page.next.url | relative_url}}" tabindex="-1"
+  <div class="row max-width-1200">
+    <div class="col-md-12 mt-3">
+              <a type="button" class="btn btn-custom" onclick="history.back()" href="#" tabindex="-1"
                 ><img src={{"/assets/images/ui/arrow-left.svg" | relative_url}} class="arrow" style="vertical-align: baseline;" alt="Left arrow"> Back</a
               >
 
@@ -23,14 +23,17 @@ layout: default
       </article>
     </div>
 
-      <!-- Add contact form -->
+      <!-- post content -->
       <div class="col-md-6 post-title">
         <div class="post-content">{{ content }}</div>
+      </div>
+
+      <div class="col-md-2">
       </div>
   </div>
 
 
-  <div class="row">
+  <div class="row max-width-1200">
     <div class="col-md-12">
       <div class="next-previous-articles">
         <nav aria-label="">
