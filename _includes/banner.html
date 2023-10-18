@@ -1,7 +1,7 @@
 
 <!-- set banner background color -->
 {% if page.section == "about" %}
-  {% assign bg_color = "null-orange" %}
+  {% assign bg_color = "null-yellow" %}
 {% elsif page.section == "services" %}
   {% assign bg_color = "null-blue" %}
 {% elsif page.section == "contact" %}
@@ -16,6 +16,8 @@
   {% assign bg_color = "null-violet" %}
 {% endif %}
 
+
+{% if page.banner != null %}
 <div class="container-fluid banner">
   <div class="row">
     <div class="col {{ bg_color }}"><img src={{ "/assets/images/ui/black-pixel.png" | relative_url }} class="pixel-filler"></div>
@@ -31,5 +33,6 @@
     <div class="col {{ bg_color }}"><img src={{ "/assets/images/ui/black-pixel.png" | relative_url }} class="pixel-filler"></div>
   </div>
 </div>
+{% endif %}
 
  
