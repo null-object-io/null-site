@@ -3,11 +3,12 @@ layout: page
 title: What We Do
 permalink: /about/
 section: about
+banner: mitm-banner-bw.jpg
 ---
 
-Placeholder for the What We Do / About page.
+> Null Object is cursus risus at ultrices *Lorem* ipsum dolor sit amet, *consectetur* adipiscing elit, incididunt ut *labore* et dolore magna aliqua. 
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vestibulum morbi blandit cursus risus at ultrices mi tempus. Tincidunt praesent semper feugiat nibh sed pulvinar proin gravida hendrerit. 
+Vestibulum morbi blandit cursus risus at ultrices mi tempus. Tincidunt praesent semper feugiat nibh sed pulvinar proin gravida hendrerit. 
 
 Mauris rhoncus aenean vel elit scelerisque mauris pellentesque pulvinar pellentesque. Risus at ultrices mi tempus imperdiet nulla malesuada pellentesque elit. Id faucibus nisl tincidunt eget.
 

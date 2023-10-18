@@ -1,7 +1,7 @@
 ---
 layout: default
 ---
-{% if page.section == "education" or page.section == "research" or page.section == "contact" %}
+{% if page.section == "education" or page.section == "research" or page.section == "contact" or page.section == "about" %}
   {% include banner.html %}
 {% endif %}
 
@@ -11,7 +11,7 @@ layout: default
   {% assign col_width = "col-md-12" %}
 {% endif %}
   
-  
+
 {% if page.section == "about" %}
   <!-- <div class="col-md-12"> -->
       {% include colored-text-block.html %}

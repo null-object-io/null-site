@@ -13,7 +13,7 @@ if (body != null) {
 
 
 // hide show nav bar
-el_autohide = document.querySelector('.autohide');
+/*el_autohide = document.querySelector('.autohide');
 
 if (el_autohide != null){
 	var last_scroll_top = 0;
@@ -29,7 +29,7 @@ if (el_autohide != null){
 	    }
 	    last_scroll_top = scroll_top;
 	}); 
-}
+}*/
 
 
 // format images in posts

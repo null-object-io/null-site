@@ -146,6 +146,45 @@ a.nav-link:hover {
 	padding-top: 40px;
 }
 
+// colored text block
+.colored-text-block p {
+	display: none;
+}
+
+.colored-text-block h1 blockquote p {
+	display: inline;
+	color: #ffffff;
+	font-size: 70px;
+}
+
+.colored-text-block .text-block {
+	padding: 50px;
+}
+
+/*display different coloured words*/
+.colored-text-block h1 blockquote em {
+	color: #FFFF00;
+	text-transform: uppercase;
+	font-style: normal;
+	font-family: 'GT-America-Mono';
+	word-spacing: -.2ch;
+}
+
+.colored-text-block h1 blockquote em:first-of-type {
+	color: #BFFF2E;
+}
+
+.colored-text-block h1 blockquote em:last-of-type {
+	color: #FF227F;
+}
+
+@include media-query($on-palm) {
+    .colored-text-block h1 blockquote p {
+		font-size: 40px;
+	}
+}
+
+
 // bricks
 .bricks {
 }
