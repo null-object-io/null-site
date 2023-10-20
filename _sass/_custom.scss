@@ -21,6 +21,17 @@
 	}
 }
 
+.max-width-1000 {
+    max-width: 1000px;
+    margin: auto;
+}
+
+@include media-query($on-palm) {
+    .max-width-1000 {
+        max-width: 100%;
+    }
+}
+
 
 // page background
 .null-green {
@@ -321,8 +332,11 @@ a.nav-link:hover {
 
 // equation block
 .null-equation {
-	padding-top: 50px;
-	padding-bottom: 50px;
+	padding: 50px;
+}
+
+.null-equation .row{
+	margin: 0;
 }
 
 .null-equation figcaption {
@@ -358,8 +372,15 @@ a.nav-link:hover {
 		width: 80%;
 	}
 
+	.null-equation .col {
+		position: relative;
+	}
+
 	.null-equation .null-equation-null-logo {
-		width: 200px;
+		position: absolute;
+		top: -35px;
+		left: -5px;;
+		width: 400px;
 	}
 }
 
