@@ -1,6 +1,12 @@
 {% assign filename1 = "/assets/images/" | append: include.file_1 %}
 {% assign filename2 = "/assets/images/" | append: include.file_2 %}
 
+<!-- if page section -->
+{% if page.section != null %}
+   {% assign width_100 = "full-width" %}
+{% endif %}
+
+<!-- else if post -->
 {% if include.file_2 != null %}
 <figure class="two-images">
    <div class="row">
@@ -18,7 +24,7 @@
 </figure>
 {% else %}
 <figure class="one-image">
-      <img src="{{filename1 | relative_url}}" class="img-fluid" alt="{{ include.alt }}"/>
+      <img src="{{filename1 | relative_url}}" class="img-fluid {{ width_100 }}" alt="{{ include.alt }}"/>
       <figcaption class="text-center">{{ include.caption_1 }}</figcaption>
 </figure>
 {% endif %}

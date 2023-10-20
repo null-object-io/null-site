@@ -306,13 +306,61 @@ a.nav-link:hover {
 	}
 }
 
-// post page - images formatted in JS
+// figures - images formatted in JS too
 .post-content figure {
 	position: relative;
 }
 
+.post-content figure img.full-width {
+	width: 100%;
+}
+
 .post-content figure figcaption {
 	font-size: 11px;
+}
+
+// equation block
+.null-equation {
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+
+.null-equation figcaption {
+	color: #ffffff;
+}
+
+.null-equation img {
+	width: 70%;
+}
+
+.null-equation .null-equation-circle {
+	width: 60%;
+}
+
+.null-equation .null-equation-null-logo {
+	width: 100%;
+}
+
+.null-equation .col span {
+	color: #ffffff;
+	font-size: 70px;
+}
+
+@include media-query($on-palm) {
+	.null-equation .col span {
+		font-size: 25px;
+	}
+	.null-equation .col figcaption {
+		font-size: 10px;
+	}
+
+	.null-equation .null-equation-circle {
+		width: 80%;
+	}
+
+	.null-equation .null-equation-null-logo {
+		width: 200px;
+	}
 }
 
 

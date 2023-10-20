@@ -13,7 +13,7 @@ layout: default
   
 
 {% if page.section == "about" %}
-  <!-- <div class="col-md-12"> -->
+  <!-- <div class="col-md-12" > -->
       {% include colored-text-block.html %}
   <!-- </div> -->
 {% endif %}
@@ -77,4 +77,8 @@ layout: default
 
   
 </div>
+
+{% if page.section == "about" %}
+      {% include null-equation-block.html %}
+{% endif %}
 
