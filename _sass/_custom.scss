@@ -194,6 +194,11 @@ a.nav-link:hover {
     .colored-text-block h1 blockquote p {
 		font-size: 40px;
 	}
+	.colored-text-block .text-block {
+		padding: 0px;
+		text-align: center;
+		padding-top: 30px;
+	}
 }
 
 
@@ -317,6 +322,13 @@ a.nav-link:hover {
 	}
 }
 
+
+// post / page content
+// hide blockquotes cos displayed elsewhere in the page
+.post-content .about-section blockquote {
+	display: none;
+}
+
 // figures - images formatted in JS too
 .post-content figure {
 	position: relative;
@@ -361,6 +373,10 @@ a.nav-link:hover {
 }
 
 @include media-query($on-palm) {
+	.null-equation {
+		padding: 50px 0 50px 0;
+	}
+
 	.null-equation .col span {
 		font-size: 25px;
 	}
@@ -378,7 +394,7 @@ a.nav-link:hover {
 
 	.null-equation .null-equation-null-logo {
 		position: absolute;
-		top: -35px;
+		top: -40px;
 		left: -5px;;
 		width: 400px;
 	}
