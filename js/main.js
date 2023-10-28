@@ -31,7 +31,9 @@ if (el_autohide != null){
 	}); 
 }*/
 
-
+function hello() {
+	console.log("hiya");
+}
 // format images in posts
 let imageBlock = document.querySelectorAll(".post-content .two-images");
 for (var i = 0; i < imageBlock.length; i++) {
