@@ -50,16 +50,7 @@ layout: default
   <!-- <div class="col-md-12"> -->
       {% include bricks.html %}
   <!-- </div> -->
-  
 
-{% elsif page.section == "services" %}
-  <div class="row max-width-1200">
-      <h1 class="case-studies-header">Case Studies - {{ page.section }}</h1>
-      <!-- <div class="row"> -->
-      {% for post in site.categories.services %}
-          {% include cards.html %}
-      {% endfor %}
-  </div>
 
 {% elsif page.section == "showcase" %}
   <div class="row max-width-1200">
@@ -80,5 +71,10 @@ layout: default
 
 {% if page.section == "about" %}
       {% include null-equation-block.html %}
+{% endif %}
+
+{% if page.section == "services" %}
+      {% include services-icons.html %}
+      {% include faqs.html %}
 {% endif %}
 
