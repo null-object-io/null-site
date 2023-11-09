@@ -6,6 +6,7 @@ layout: homepage
 section: home
 ---
 
+> Null Object cursus at *Lorem* amet, *consectetur* adipis elit *labore* dolore. 
 
 Null Object is a Null Object Ltd, is a platform for creative technology research, enterprise and pedagogy.
 

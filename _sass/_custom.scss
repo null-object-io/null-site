@@ -157,6 +157,22 @@ a.nav-link:hover {
 	padding-top: 40px;
 }
 
+// home page
+// colored text block container home page
+.mission-statement-mini {
+	padding: 100px 0 100px 0;
+}
+
+.mission-statement-mini .material-symbols-outlined {
+	color: #ffffff;
+	font-size: 60px;
+  font-variation-settings: 'FILL' 1, 'OPSZ' 48;
+}
+
+.logo-block {
+	padding: 160px 0 50px 0;
+}
+
 // colored text block
 .colored-text-block p,
 .colored-text-block figure {
