@@ -6,7 +6,7 @@ section: about
 banner: btl-banner-bw.jpg
 ---
 
-> Null Object is cursus risus at ultrices *Lorem* ipsum dolor sit amet, *consectetur* adipiscing elit, incididunt ut *labore* et dolore magna aliqua. 
+> Null Object is cursus risus at ultrices *Lorem* ipsum dolor sit amet, *consectetur* adipiscing elit, incididunt ut *labore* et dolore *magna* aliqua. 
 
 Vestibulum morbi blandit cursus risus at ultrices mi tempus. Tincidunt praesent semper feugiat nibh sed pulvinar proin gravida hendrerit. 
 

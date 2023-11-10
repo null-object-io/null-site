@@ -12,11 +12,9 @@ layout: default
 {% endif %}
   
 
-{% if page.section == "about" %}
-  <!-- <div class="col-md-12" > -->
+<!-- {% if page.section == "about" %}
       {% include colored-text-block.html %}
-  <!-- </div> -->
-{% endif %}
+{% endif %} -->
 
 <div class="container {{ page.section }}-section">
   <div class="row max-width-1200">
@@ -71,6 +69,7 @@ layout: default
 
 {% if page.section == "about" %}
       {% include null-equation-block.html %}
+      {% include who-we-work-with.html %}
 {% endif %}
 
 {% if page.section == "services" %}

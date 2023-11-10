@@ -1,3 +1,14 @@
+.max-width-600 {
+    max-width: 600px;
+    margin: auto;
+}
+
+@include media-query($on-palm) {
+    .max-width-600 {
+        max-width: 100%;
+    }
+}
+
 .max-width-1200 {
     max-width: 1200px;
     margin: auto;
@@ -224,7 +235,7 @@ a.nav-link:hover {
 }
 
 .material-symbols-outlined.size-48 {
-  font-size: 108px;
+  font-size: 95px;
   font-variation-settings: 'OPSZ' 48;
 }
 
@@ -245,8 +256,16 @@ a.nav-link:hover {
 }
 
 .accordion-button:focus {
-    border-color: #000000;
-    box-shadow: 0 0 0 .05rem rgba(0,0,0,.25);
+    /* border-color: #000000;
+    box-shadow: 0 0 0 .05rem rgba(0,0,0,.25); */
+}
+
+.accordion button {
+	text-transform: uppercase;
+    font-size: 14px;
+    font-family: "GT-America-Mono";
+    word-spacing: -0.2ch;
+    text-decoration: none;
 }
 
 // bricks
@@ -399,7 +418,7 @@ a.nav-link:hover {
 }
 
 .null-equation figcaption {
-	color: #ffffff;
+	/* color: #ffffff; */
 }
 
 .null-equation img {
@@ -411,12 +430,13 @@ a.nav-link:hover {
 }
 
 .null-equation .null-equation-null-logo {
-	width: 100%;
+	width: 85%;
 }
 
 .null-equation .col span {
-	color: #ffffff;
-	font-size: 70px;
+    font-size: 70px;
+    position: relative;
+    top: 25px;
 }
 
 @include media-query($on-palm) {
@@ -461,11 +481,11 @@ footer .col-md-6 {
 }
 
 footer .links {
-	text-align: left;
+	text-align: right;
 }
 
 footer .copyright {
-	text-align: right;
+	text-align: left;
 }
 
 
