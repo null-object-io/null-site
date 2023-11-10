@@ -44,11 +44,6 @@ layout: default
       {% endfor %}
   </div>
 
-{% elsif page.section == "education" %}
-  <!-- <div class="col-md-12"> -->
-      {% include bricks.html %}
-  <!-- </div> -->
-
 
 {% elsif page.section == "showcase" %}
   <div class="row max-width-1200">
@@ -77,3 +72,8 @@ layout: default
       {% include faqs.html %}
 {% endif %}
 
+{% if page.section == "education" %}
+  <!-- <div class="col-md-12"> -->
+      {% include bricks.html %}
+  <!-- </div> -->
+{% endif %}

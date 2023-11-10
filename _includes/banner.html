@@ -1,5 +1,5 @@
 
-<!-- set banner background color -->
+<!-- set BANNER background color -->
 {% if page.section == "about" %}
   {% assign bg_color = "null-yellow" %}
 {% elsif page.section == "services" %}
@@ -9,28 +9,26 @@
 {% elsif page.section == "research" %}
   {% assign bg_color = "null-green" %}
 {% elsif page.section == "showcase" %}
-  {% assign bg_color = "null-yellow" %}
+  {% assign bg_color = "null-violet" %}
 {% elsif page.section == "education" %}
   {% assign bg_color = "null-orange" %}
 {% elsif page.section == "home" %}
-  {% assign bg_color = "null-violet" %}
+  {% assign bg_color = "random-color" %}
 {% endif %}
 
-
 {% if page.banner != null %}
-<div class="container-fluid banner">
+<div class="container-fluid banner {{ bg_color }}">
   <div class="row">
-    <div class="col {{ bg_color }}"><img src={{ "/assets/images/ui/black-pixel.png" | relative_url }} class="pixel-filler"></div>
-    <div class="{{ bg_color }} text-center col-md-auto">
-      <!-- if external image -->
-      {% if page.banner contains "https" %}
-        <img src={{ post.image }} class="img-fluid" alt="{{ page.title }}">
-      {% elsif page.banner %}
-        {% assign filename = "/assets/images/" | append: page.banner %}
-        <img src={{ filename | relative_url }} alt="Null Object Research" >
-      {% endif %}
+    <div class="col">
+      <img src={{ "/assets/images/ui/black-pixel.png" | relative_url }} class="pixel-filler">
     </div>
-    <div class="col {{ bg_color }}"><img src={{ "/assets/images/ui/black-pixel.png" | relative_url }} class="pixel-filler"></div>
+    {% assign filename = "/assets/images/" | append: page.banner %}
+    <div class="text-center img-container col-md-auto" style="background-image: url( {{ filename | relative_url }} );">    
+        <img src={{ filename | relative_url }} alt="Null Object Research" >
+    </div>
+    <div class="col">
+      <img src={{ "/assets/images/ui/black-pixel.png" | relative_url }} class="pixel-filler">
+    </div>
   </div>
 </div>
 {% endif %}
