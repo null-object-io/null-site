@@ -10,12 +10,12 @@
 {% if include.file_2 != null %}
 <figure class="two-images">
    <div class="row">
-      <div class="col-md text-center">
+      <div class="col-md">
          <img src="{{filename1 | relative_url}}" class="img-fluid" alt="{{ include.alt }}"/>
          <figcaption>{{ include.caption_1 }}</figcaption>
       </div>
    
-      <div class="col-md text-center">
+      <div class="col-md">
          <img src="{{filename2 | relative_url}}" class="img-fluid" alt="{{ include.alt }}"/>
          <figcaption>{{ include.caption_2 }}</figcaption>
       </div>
@@ -25,6 +25,6 @@
 {% else %}
 <figure class="one-image">
       <img src="{{filename1 | relative_url}}" class="img-fluid {{ width_100 }}" alt="{{ include.alt }}"/>
-      <figcaption class="text-center">{{ include.caption_1 }}</figcaption>
+      <figcaption>{{ include.caption_1 }}</figcaption>
 </figure>
 {% endif %}

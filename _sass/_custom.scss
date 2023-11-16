@@ -417,6 +417,19 @@ a.nav-link:hover {
 	display: none;
 }
 
+.post-block {
+	width: 600px;
+}
+
+.post-block.post-title {
+	padding-top: 0;
+	line-height: 1.5rem;
+}
+
+.post-block .post-title {
+	padding-top: 0;
+}
+
 // figures - images formatted in JS too
 .post-content figure {
 	position: relative;
@@ -428,6 +441,12 @@ a.nav-link:hover {
 
 .post-content figure figcaption {
 	font-size: 11px;
+	text-align: left;
+	text-transform: uppercase;
+    font-size: 14px;
+    font-family: "GT-America-Mono";
+    word-spacing: -0.2ch;
+    text-decoration: none;
 }
 
 // equation block
@@ -560,6 +579,7 @@ footer a {
 	margin-top: 20px;
 }
 
+.post-block .black-dot,
 .card .black-dot,
 .bricks .black-dot {
   height: 3px;
@@ -570,6 +590,7 @@ footer a {
   margin: 1px 7px 3px 5px;
 }
 
+.post-block .black-dot:last-child,
 .card .black-dot:last-child,
 .bricks .black-dot:last-child {
   height: 3px;
@@ -594,6 +615,7 @@ footer a {
 	overflow: hidden;
 }
 
+.post-block .category,
 .card-body .category,
 .bricks .category,
 .form-label {

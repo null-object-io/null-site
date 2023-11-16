@@ -11,29 +11,16 @@ if (body != null) {
 	body.classList.add(randomElement);
 }
 
+let scrollArrow = document.querySelector("#scroll-down-homepage");
+let logoSection = document.querySelector("#logo-section");
 
-// hide show nav bar
-/*el_autohide = document.querySelector('.autohide');
-
-if (el_autohide != null){
-	var last_scroll_top = 0;
-	window.addEventListener('scroll', function() {
-	    let scroll_top = window.scrollY;
-	    if(scroll_top < last_scroll_top) {
-	      el_autohide.classList.remove('scrolled-down');
-	      el_autohide.classList.add('scrolled-up');
-	    }
-	    else {
-	      el_autohide.classList.remove('scrolled-up');
-	      el_autohide.classList.add('scrolled-down');
-	    }
-	    last_scroll_top = scroll_top;
-	}); 
-}*/
-
-function hello() {
-	console.log("hiya");
+if (scrollArrow != null) {
+	scrollArrow.addEventListener('click', function(){
+		logoSection.scrollIntoView({ behavior: "smooth", block: "start", inline: "nearest"});
+	});
 }
+
+
 // format images in posts
 let imageBlock = document.querySelectorAll(".post-content .two-images");
 for (var i = 0; i < imageBlock.length; i++) {
