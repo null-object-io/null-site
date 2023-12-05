@@ -87,6 +87,15 @@
   border-radius: 0;
 }
 
+.navbar-collapse {
+    /* height: 100vh; */
+    text-align: center;
+}
+
+.navbar-collapse.show {
+  transition: all 0.5s;
+}
+
 .navbar .container-fluid {
   padding-right: 1.75rem;
   padding-left: 1.75rem;
@@ -130,6 +139,18 @@ a.nav-link:hover {
 	background-position-y: 120%;
 	background-size: 100%;
     //background-color:red !important;
+}
+
+@include media-query($on-palm) {
+    a.nav-link {
+		font-size: 34px;
+	}
+
+	.navbar ul {
+	    height: 90vh;
+	    line-height: 3.5rem;
+    	margin-top: 1rem;
+	}
 }
 
 .scrolled-down{
@@ -577,6 +598,7 @@ footer a {
 
 .card .panel-title {
 	margin-top: 20px;
+	white-space: nowrap;
 }
 
 .post-block .black-dot,
